@@ -1,0 +1,77 @@
+.topic-list>tbody>tr:first-of-type {
+ border-top:3px solid #d55400
+}
+#create-topic {
+ background:#d55400
+}
+
+.btn {
+ background:#174223
+}
+.btn:hover {
+ background:#35a053
+}
+.navigation-toggle {
+ background:#174223 !important
+}
+aside.quote .title {
+ border-left:5px solid #d55400
+}
+blockquote {
+ border-left:5px solid #d55400
+}
+aside.onebox {
+ border:#d55400 solid 5px
+}
+
+.draft,.saving {
+ background:#f95f00 !important
+}
+.btn-danger {
+ background:#af4600
+}
+.btn-danger:hover {
+ background:#e05a00;
+ color:#f7f7f7
+}
+.timeline-container .topic-timeline .timeline-handle {
+ background:#d55400
+}
+.is-highlighted {
+ background:#35a053 !important
+}
+.btn-primary,.dropdown-select-box-row:not(.is-highlighted) {
+ background:#a3a3a3 !important
+}
+.alert-info {
+ background:#bc4b00 !important;
+}
+.unread-notifications {
+ background:#d55400 !important
+}
+.drop>li:hover {
+  background:#303030;
+}
+@media all and (max-width:342px) {
+  .panel li:not(.read) {
+    height:35px;
+    width: 35px;
+    font-size:12px;
+  }
+}
+.unread-private-messages, .alert-info {
+  color:#f7f7f7 !important;
+}
+
+.topic-avatar .avatar-flair {
+  font-size: 17px;
+}
+.collapsed-info .avatar-flair {
+  font-size:9px
+}
+.btn-primary {
+  color:#f2f2f2
+}
+.dropdown-select-box-row:not(.is-highlighted) {
+ background:#aaaaaa !important;
+}
