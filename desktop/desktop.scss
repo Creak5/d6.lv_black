@@ -1,126 +1,22 @@
-.unread-notifications {
- background:#d3641c
-}
-.cat:hover {
- background:#4E4E4E
-}
-.dropdown-select-box-row:not(.is-highlighted) {
- background:#a3a3a3 !important
-}
-.title-and-category {
- width:48.8% !important
-}
-.post-controls .btn-icon:not(.toggle-like):hover {
- background:#4d4d4d !important
-}
-.btn-danger {
- background:#af4600 !important
-}
-.btn-danger:hover {
- background:#e05a00 !important;
- color:#f7f7f7
-}
-.composer-popup {
- left:49.8%;
- width:calc(51% - 45px)
-}
-#reply-control .save-or-cancel #draft-status,#reply-control .save-or-cancel #file-uploading {
- margin-right:15px
-}
-.d-editor-preview-wrapper {
- border:dashed #909090 2px;
- padding:8px;
- overflow:auto
-}
-.nav-stacked a:hover {
- transition:background 0.1s linear;
- transition:color 0,1s linear;
- background:#222;
- color:#a0a0a0
-}
-#create-topic {
- background:#d3641c
-}
-#create-topic:hover {
- background:#f7560e;
- color:#3a3a3a
-}
-.alert-info {
- background:#bc4b00 !important;
- color:#d9d9d9 !important
-}
-
-.topic-list>tbody>tr:first-of-type {
- border-top:3px solid #d3641c !important
-}
-.top-sub-section li {
- transition:border-left 0.2s ease;
- border-left:solid 2px #4c4c4c
-}
-.top-sub-section li:hover {
- border-left:solid 2px #d3641c
-}
-.nav-pills>li>a:hover {
- color:#f7560e !important
-}
-.btn-primary {
- background:#d86317 !important;
- color:#e5e5e5
-}
-.btn-primary:hover {
- background:#f95f00 !important;
- color:#222 !important
-}
-.btn:hover {
- background:#26763c
-}
-.btn {
- background:#22462c
-}
-.widget-button.btn.create {
- background:#d86317 !important;
- color:#e5e5e5
-}
-.widget-button.btn.create:hover {
- background:#f95f00 !important;
- color:#222 !important
-}
-.timeline-container .topic-timeline .timeline-handle {
- background:#d3641c
-}
-aside.onebox {
- border:5px solid #d3641c
-}
-blockquote {
- border-left:5px solid #d3641c
-}
-aside.quote .title {
- border-left:5px solid #d3641c
-}
-.babble-posts .babble-post-name .full-name {
- display:none
-}
-.babble-posts img {
- max-width:220px
-}
-.babble-menu .slide-in {
- height:calc(100vh - 94px) !important
-}
 html {
- font-family:"Play", sans-serif;
- font-weight:400
+ font-family:"Roboto", sans-serif;
+ font-weight:400;
+ overflow-x: hidden;
 }
 body input,body button,body select,body textarea {
- font-family:"Play", Helvetica, Arial, sans-serif
+ font-family:"Roboto", Helvetica, Arial, sans-serif
+}
+.unread-notifications {
+ background:$tertiary;
 }
 .nav-pills>li.active>a,.nav-pills>li>a.active {
- color:#d9d9d9;
+ color:$primary;
  font-weight:500;
- background-color:#222;
- border-bottom:3px solid #d3641c
+ background-color:$secondary;
+ border-bottom:3px solid $tertiary;
 }
 .nav-pills>li>a:hover {
- background-color:#222
+ background-color:$secondary;
 }
 .anon .topic-area .btn-primary.btn.ember-view {
  position:absolute;
@@ -132,15 +28,11 @@ body input,body button,body select,body textarea {
   margin-left:calc(100% - 109px)
  }
 }
-.category-list {
- background:RGBA(25, 25, 25, 0.9) none repeat scroll 0% 0%;
- margin-bottom:0px
-}
 .topic-body.highlighted {
  animation:none
 }
 .d-header .icons .unread-private-messages,.d-header .icons .ring {
- color:#d9d9d9
+ color:$secondary;
 }
 .embedded-posts.top.topic-body {
  margin-left:90px;
@@ -156,22 +48,21 @@ body input,body button,body select,body textarea {
  width:50px
 }
 #top-navbarbackground {
- background-color:#111
+ background-color:$header-background;
 }
 .list-controls,#list-area {
- background:RGBA(25, 25, 25, 0.9) none repeat scroll 0% 0%
+ background:RGBA(25,25,25,0.9) none repeat scroll 0% 0%;
 }
 .list-controls {
- padding:6px;
- border-bottom:3px solid #363636
+ padding:6px
 }
 .topic-body,.fps-result,.search-title,.search.row,.user-main,.body-page,.groups-table,.groups-table tr td,.container.group,.container.badges,.container.show-badge,.directory,.topic-error,.queued-posts,.not-found-container {
- background-color:#191919;
+ background-color:$secondary;
  padding-left:11px;
  padding-right:11px
 }
 .groups-page h1 {
- background-color:#191919;
+ background-color:$secondary;
  padding:11px
 }
 .user-main {
@@ -183,12 +74,12 @@ body input,body button,body select,body textarea {
 .fps-result,.search-title,.search.row {
  padding:8px;
  margin:0px;
- border-bottom:1px solid #363636
+ border-bottom:1px solid $primary;
 }
 .topic-status-info,#topic-footer-buttons,#suggested-topics,#topic-title .title-wrapper,.small-action,.signup-cta,.presence-users {
  width:690px;
  margin-left:91px;
- background-color:#191919 !important;
+ background-color:$secondary !important;
  padding-left:11px;
  padding-right:11px;
  margin-bottom:0px
@@ -208,9 +99,8 @@ body input,body button,body select,body textarea {
  margin-bottom:0px
 }
 #banner {
- background:#f7f8f9;
- color:#d9d9d9;
- background-color:#191919;
+ background:$secondary;
+ background-color:$secondary;
  box-shadow:0 0px 0px #e7eaed;
  border-radius:0px
 }
@@ -230,7 +120,7 @@ body input,body button,body select,body textarea {
  .topic-body {
   width:calc(100% - 90px)
  }
- #topic-title .title-wrapper,.presence-users,.topic-status-info,#topic-footer-buttons,#suggested-topics,#topic-title .title-wrapper,.small-action,.signup-cta {
+ #topic-title .title-wrapper,.topic-status-info,#topic-footer-buttons,#suggested-topics,#topic-title .title-wrapper,.small-action,.signup-cta,.presence-users {
   width:calc(100% - 113px)
  }
 }
@@ -239,7 +129,7 @@ body input,body button,body select,body textarea {
  padding:15px 15px 20px 15px
 }
 .embedded-posts .topic-avatar {
- border-top:1px solid #363636
+ border-top:1px solid #e0e0e0; //notVar
 }
 .embedded-posts .topic-avatar .avatar-flair.rounded,.avatar-flair-preview .avatar-flair.rounded {
  width:25px;
@@ -277,36 +167,101 @@ body input,body button,body select,body textarea {
  width:690px !important;
  padding-bottom:390px !important
 }
-.widget-button.btn.create {
+.topic-list>tbody>tr:first-of-type {
+ border-top:3px solid $tertiary !important
+}
+.create {
+    background:$tertiary;
+    color:$primary;
+}
+.create:hover {
+    background:#1a8439;//reply button hover
+    color: $secondary;
+}
+#create-topic {
+ background:$tertiary;
+ color: $primary;
+}
+#create-topic:hover {
+ background:#1a8439;//new topic hover
+  color: $secondary;
+}
+.mention, .mention-group{//mention background color       
+    background: #4c4c4c !important;
+}
+aside.onebox {
+  border: 5px solid $tertiary;
+}
+blockquote {
+  border-left: 5px solid $tertiary;
+}
+aside.quote .title {
+  border-left: 5px solid $tertiary;
+}
+aside.quote .title {
+  border-left: 5px solid $tertiary;
+}
+
+.timeline-handle{
+    background: $danger !important;//timeline
+}
+
+.topic-body {
+    border-top: 1px solid #4c4c4c;
+}
+
+.d-editor-preview-wrapper {//dashed border of editor
+border:dashed #909090 2px !important;
+padding:8px;
+}
+
+.title-and-category {
+ width:48.8% !important
+}
+
+.composer-popup {
+width: calc(51% - 45px);
+left: 49.8%;
+}
+
+#reply-control .save-or-cancel #draft-status, #reply-control .save-or-cancel #file-uploading {
+margin-left: 25px;
+margin-right: 15px;
+}
+.nav-stacked a:hover {
+    transition:background 0.1s linear;
+    transition:color 0,1s linear;
+    background:#3a3a3a;//hover of acc options on left side
+    color:#a0a0a0;//hover of acc options on left side
+}
+
+.top-sub-section li { 
+    transition: border-left 0.2s ease;
+    border-left:solid 2px #4c4c4c; //left border color in acc stats
+}
+.top-sub-section li:hover {
+    border-left:solid 2px $highlight;
+}
+.topic-list>tbody>tr {
+border-bottom:1px solid #4c4c4c;//border between topics
+}
+.timeline-footer-controls .create {
  border-radius:100%;
  width:50px;
  height:50px;
- background-color:#afbac4
-}
-.widget-button.btn.create .fa-reply {
  font-size:17px;
- margin-left:-1px;
- margin-top:5px
 }
-.widget-button.btn.notifications-dropdown {
- border-radius:100%;
- width:30px;
- height:30px
+.avatar-flair .fa {
+  margin-left:3px;
+  margin-bottom:0.3px;
 }
-.widget-button.btn.notifications-dropdown .fa {
- margin-left:-2.5px
-}
-
-.timeline-footer-controls .create {
- padding-bottom: 10px;
-}
-
 .topic-avatar .avatar-flair {
   font-size: 19px;
 }
 .collapsed-info .avatar-flair {
   font-size:8px
 }
+
 .composer-fields .presence-users {
    margin-top: 5px;
   background: transparent !important;
@@ -327,8 +282,24 @@ body input,body button,body select,body textarea {
 }
 .offset2 .collapse-down {
   margin-left: 48.5px;
-  margin-top: 55px
+  margin-top: 55px;
 }
 .offset2 .topic-body {
   width: 600px
+}
+
+body {
+ background: url(" ") repeat fixed center top/cover;
+}
+
+.bottom .collapse-up {
+  margin-left:25px;
+  margin-top: 30px;
+}
+
+.timeline-footer-controls .widget-button {
+    color:$primary;
+}
+.timeline-footer-controls .widget-button:hover {
+    color:$secondary;
 }
